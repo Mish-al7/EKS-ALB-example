@@ -1,5 +1,5 @@
 # EKS-ALB-example
-2048 game deployed using EKS, ALB as Ingress and VPC
+2048 game deployed using EKS, ALB as Ingress and VPC. The image of the 2048 game is already uploaded in the registry and the details is given inside the deployment manifest. 
 
 step 1: Install and set-up AWScli and configure (aws cofigure) using access key and secret key from your AWS account.
 
@@ -47,3 +47,5 @@ install : "helm install aws-load-balancer-controller eks/aws-load-balancer-contr
 verify the deployments are running: "kubectl get deployment -n kube-system aws-load-balancer-controller"
 
 step 11: take the address from kubectl (kubectl get ingress -n kube-system) or from loadbalancer tab in console (DNS name) and paste it in a browser and see if the 2048 game is running.
+ 
+ 
